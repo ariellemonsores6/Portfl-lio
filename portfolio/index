@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+.titulo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 94px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* espaço entre imagem e texto */
+}
+
+.foto-arredondada {
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+:root{
+  --primary:#1f3c88;
+  --secondary:#f2f4f8;
+  --dark:#1a1a1a;
+  --gray:#666;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body{
+  background:#fff;
+  color:var(--dark);
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,25),rgba(0,0,0,25)),
+  url("img/hero.jpg") center/cover no-repeat;
+  color:#fff;
+  padding:100px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:2.8rem;
+  margin-bottom:15px;
+}
+
+.hero p{
+  max-width:750px;
+  margin:auto;
+  font-size:1.1rem;
+  opacity:.95;
+}
+
+.hero a{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 32px;
+  background:#fff;
+  color:#000;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+section h2{
+  text-align:center;
+  font-size:2.2rem;
+  margin-bottom:20px;
+}
+
+/* SOBRE */
+.about{
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+  color:var(--gray);
+  font-size:1.05rem;
+}
+
+/* PROJETOS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.project-card{
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-8px);
+}
+
+.project-img{
+  width:100%;
+  height:220px;
+  overflow:hidden;
+}
+
+.project-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.project-content{
+  padding:25px;
+}
+
+.project-content h3{
+  margin-bottom:10px;
+  color:var(--primary);
+}
+
+.project-content p{
+  font-size:.95rem;
+  color:var(--gray);
+}
+
+/* TECNOLOGIAS */
+.tech{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:25px;
+}
+
+.tech div{
+  background:var(--secondary);
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  font-weight:500;
+}
+
+/* CTA */
+.cta{
+  background:var(--primary);
+  color:#fff;
+  text-align:center;
+  padding:80px 20px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+}
+
+.cta a{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 36px;
+  background:#fff;
+  color:#000;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  background:#000000;
+  color:#aaa;
+  text-align:center;
+  padding:25px;
+  font-size:.9rem;
+}
+
+@media(max-width:600px){
+  .hero h1{font-size:2rem;}
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="C:\Users\ariel\OneDrive\index.html\imagens\eu.jpg" alt="Foto" class="avatar">
+  <h1>Desenvolvedora Web</h1>
+  <p>
+    Sites, landing pages e sistemas web modernos, responsivos
+    e focados em performance, usabilidade e conversão.
+  </p>
+ 
+</div>
+
+<!-- SOBRE -->
+<section>
+  <h2>Sobre Mim</h2>
+  <p class="about">
+   Desenvolvo sites responsivos, landing pages e sistemas web com foco em performance, usabilidade e estética moderna, utilizando tecnologias como HTML, CSS, JavaScript, PHP, WordPress (com Elementor), além de integração com APIs REST e noções de frameworks.
+  </p>
+ <h2>Formação</h2>
+  <p class="about">
+   Técnico em informática para internet(2019)<br>
+	Pacote office(Intermediario)<br>
+	Técnico em computação grafica(2024)<br>
+	Desenvolvimento mobile(andamento)
+  </p>
+</section>
+
+<!-- PROJETOS -->
+<section>
+  <h2>Projetos em Destaque</h2>
+
+  <div class="projects">
+
+    <div class="project-card">
+      <div class="project-img">
+        <img src="C:\Users\ariel\OneDrive\index.html\imagens\xo.jpg" alt="Site Soromix">
+      </div>
+      <div class="project-content">
+        <h3>Soromix</h3>
+        <p>
+          Site institucional corporativo com visual moderno,
+          foco em credibilidade e navegação intuitiva.
+        </p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img">
+        <img src="C:\Users\ariel\OneDrive\index.html\imagens\cursos.jpg"  alt="Pro Inclusão">
+      </div>
+      <div class="project-content">
+        <h3>Pro Inclusão</h3>
+        <p>
+          Plataforma educacional acessível,
+          com comunicação clara e impacto social.
+        </p>
+      </div>
+    </div>
+ <div class="project-card">
+      <div class="project-img">
+        <img src="C:\Users\ariel\OneDrive\index.html\imagens\inves.jpg"alt="Vanarts Decor">
+      </div>
+      <div class="project-content">
+        <h3>Tibi Investimentos</h3>
+        <p>
+        Design profissional voltado para empresas.
+        </p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img">
+        <img src="C:\Users\ariel\OneDrive\index.html\imagens\var.jpg" alt="Vanarts Decor">
+      </div>
+      <div class="project-content">
+        <h3>Vanarts Decor</h3>
+        <p>
+          Loja virtual com layout delicado,
+          vitrine organizada e ótima experiência de compra.
+        </p>
+      </div>
+    </div>
+ 
+ 
+    <div class="project-card">
+      <div class="project-img">
+        <img src="C:\Users\ariel\OneDrive\index.html\imagens\loja.jpg" alt="Loja">
+      </div>
+      <div class="project-content">
+        <h3>Loja feminina</h3>
+        <p>
+          Loja virtual moderna e simples.
+        </p>
+      </div>
+    </div>
+ 
+	  
+     
+  
+</section>
+
+<!-- TECNOLOGIAS -->
+<section>
+  <h2>Tecnologias</h2>
+  <div class="tech">
+    <div>HTML • CSS • JavaScript</div>
+    <div>PHP • APIs REST</div>
+    <div>WordPress • Elementor</div>
+    <div>Responsividade & Performance</div>
+	<div>Canvas & Excel</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta" id="contato">
+  <h2>Vamos Trabalhar Juntos?</h2>
+  <p>Entre em contato e leve seu projeto para outro nível.</p>
+  <a href="https://wa.me/5524988257632?text=Em%20breve%20respondo!%20">Falar no WhatsApp</a>
+</div>
+
+<footer>
+  © 2026 • Desenvolvimento Web
+</footer>
+
+</body>
+</html>
